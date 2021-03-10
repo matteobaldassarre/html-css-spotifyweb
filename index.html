@@ -25,6 +25,7 @@
                     <!-- Logo -->
                     <div class="logo">
                         <a href="#"><img src="img/logo.svg" alt="logo"></a>
+                        <a href="#"><img src="img/logo-small.svg" alt="logo-small"></a>
                     </div>
                     <!-- End Logo -->
     
@@ -35,21 +36,21 @@
                                 <div class="icon">
                                     <img src="img/home.svg" alt="home">
                                 </div>
-                                <a href="#" class="white-txt">Home</a>
+                                <a href="#" class="white-txt home">Home</a>
                             </li>
     
                             <li>
                                 <div class="icon">
                                     <img src="img/search.svg" alt="search">
                                 </div>
-                                <a href="#">Cerca</a>
+                                <a href="#" class="search">Cerca</a>
                             </li>
     
                             <li>
                                 <div class="icon">
                                     <img src="img/libreria.svg" alt="library">
                                 </div>
-                                <a href="#">La tua libreria</a>
+                                <a href="#" class="library">La tua libreria</a>
                             </li>
                         </ul>
                     </div>
@@ -108,7 +109,7 @@
                             <div class="empty-circle">
                                 <i class="fas fa-arrow-down"></i>
                             </div>
-                            <a href="#" class="grey-txt">Installa app</a>
+                            <a href="#" class="grey-txt installa-app">Installa app</a>
                         </div>
                         <div class="grey-line"></div>
                         <div class="user">
@@ -116,7 +117,7 @@
                                 <img src="img/profile.svg" alt="profile">
                             </div>
                             &nbsp;
-                            <span><strong>John Doe</strong></span>
+                            <span class="username"><strong>John Doe</strong></span>
                         </div>
                     </div>
                     <!-- End Install and User -->
@@ -134,7 +135,34 @@
 
             <!-- Main Content -->
             <div class="main-content bg-blue">
-              
+                <div class="top-nav container-flex">
+                    <ul>
+                        <li>
+                            <a href="#"><span class="green-line">IN EVIDENZA</span></a>
+                        </li>
+                        <li>
+                            <a href="#">PODCAST</a>
+                        </li>
+                        <li>
+                            <a href="#">CLASSIFICHE</a>
+                        </li>
+                        <li>
+                            <a href="#">GENERI E MOOD</a>
+                        </li>
+                        <li>
+                            <a href="#">NUOVE USCITE</a>
+                        </li>
+                        <li>
+                            <a href="#">SCOPRI</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="wrapper">
+                    <div class="recently-played">
+                        <h2 class="white-txt">Recently played</h2>
+                    </div>
+                </div>
             </div>
             <!-- End Main Content -->
 
@@ -143,7 +171,85 @@
 
         <!-- FOOTER -->
         <footer class="bg-grey">
+            <!-- Flex Container -->
+            <div class="container-flex">
+                <!-- Music Column-->
+                <div class="music">
+                    <!-- Song Icon -->
+                    <div class="song"></div>
+                    <div class="song-info">
+                        <!-- Singer -->
+                        <h5 class="white-txt">Sinister</h5> 
+                        <!-- Song Name -->
+                        <h6 class="grey-txt">Brano Nome</h6>
+                    </div>
+                    <!-- Icons -->
+                    <div class="icons">
+                        <a href="#"><i class="far fa-heart grey-txt"></i></a>
+                        &nbsp;
+                        &nbsp;
+                        <a href="#"><i class="far fa-folder grey-txt"></i></a>
+                    </div>
+                </div>
 
+                <!-- Time Bar Column -->
+                <div class="play text-center">
+                    <!-- Play Buttons -->
+                    <ul class="play-buttons">
+                        <!-- Random -->
+                        <li>
+                            <a href="#" class="font-size-20"><i class="fas fa-random"></i></a>
+                        </li>
+                        <!-- Backward -->
+                        <li>
+                            <a href="#" class="font-size-20"><i class="fas fa-step-backward"></i></a>
+                        </li>
+                        <!-- Play -->
+                        <li> 
+                            <a href="#" class="font-size-35"><i class="far fa-play-circle"></i></a>
+                        </li>
+                        <!-- Forward -->
+                        <li>
+                            <a href="#" class="font-size-20"><i class="fas fa-step-forward"></i></a>
+                        </li>
+                        <!-- Repeat -->
+                        <li>
+                            <a href="#" class="font-size-20"><i class="fas fa-redo-alt"></i></a>
+                        </li>
+                    </ul>
+                    <!-- Time Bar -->
+                    <div class="white-txt">
+                        <span class="font-size-13">0:25</span>
+                        <div class="time-bar">
+                            <div class="elapsed-bar">
+                                <div class="elapsed-bar-green">
+                                    <div class="white-circle">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="font-size-13">4:35</span>
+                    </div>
+                </div>
+                
+                <!-- Volume Column -->
+                <div class="volume text-right">
+                    <div class="options">
+                        <a href="#"><i class="fas fa-list"></i></a>
+                        <a href="#"><i class="fas fa-desktop"></i></a>
+                        <a href="#"><i class="fas fa-volume-up"></i></a>
+                        <div class="volume-bar">
+                            <div class="volume-current">
+                                <div class="volume-bar-green">
+                                    <div class="white-circle">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Flex Container -->
         </footer>
         <!-- END FOOTER -->
 
