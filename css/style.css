@@ -57,6 +57,10 @@ a {
     font-size: 35px;
 }
 
+.font-size-45 {
+    font-size: 45px;
+}
+
 /* Font Color*/
 .white-txt {
     color: white;
@@ -100,7 +104,7 @@ a {
 }
 
 .pop:hover {
-    box-shadow: 0 0px 15px rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0px 20px rgba(255, 255, 255, 0.7);
 }
 /* End Hover FXs */
 
@@ -322,6 +326,68 @@ main .main-content .top-nav li:nth-child(n+1) {
     padding-left: 15px;
 }
 
+main .main-content .container-flex {
+    flex-wrap: nowrap;
+}
+
+main .main-content .wrapper {
+    padding: 20px;
+}
+
+main .main-content .wrapper .song {
+    margin: 15px 15px 15px 0;
+    width: calc( 100% / 6 );
+    transition: transform 0.3s;
+}
+
+main .main-content .wrapper .song-content .layover {
+    cursor: pointer;
+    transition: opacity 0.3s, color 0.3s;
+    position: relative;
+    color: transparent;
+}
+
+main .main-content .wrapper .song-content .layover .fa-play-circle {
+    color: inherit;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main .main-content .wrapper .song h4 {
+    margin-top: 15px;
+}
+
+main .main-content .created-for-john {
+    margin: 30px 0;
+}
+
+main .main-content .created-for-john h2,
+main .main-content .popular-artists h2 {
+    margin-bottom: 10px;
+}
+
+main .main-content .wrapper .song:hover {
+    transform: scale(1.1);
+}
+
+main .main-content .wrapper .layover:hover {
+    opacity: 0.8;
+    color: white;
+}
+
+main .main-content .wrapper .artist-box {
+    margin: 25px 15px 0px 0;
+    width: calc( 100% / 6 );
+}
+
+main .main-content .wrapper .artist {
+    margin-bottom: 25px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
 
 /* ###################################### */
 /* ###################################### */
@@ -511,12 +577,32 @@ footer .volume .volume-bar-green:hover {
     main nav img[alt="logo-small"] {
         display: none;
     }
+
+    main .main-content .container-flex {
+        flex-wrap: wrap;
+    }
+
+    main .main-content .wrapper .song {
+        width: calc( 100% / 5 );
+    }
 }
 
 /* Media Query S */
 @media all and (max-width: 991px) {
     main nav img[alt="logo-small"] {
         display: none;
+    }
+
+    main .main-content .top-nav {
+        font-size: 12px;
+    }
+
+    main .main-content .container-flex {
+        flex-wrap: wrap;
+    }
+
+    main .main-content .wrapper .song {
+        width: calc( 100% / 4 );
     }
 }
 
@@ -570,4 +656,15 @@ footer .volume .volume-bar-green:hover {
         display: block;
     }
 
+    main .main-content .top-nav {
+        font-size: 12px;
+    }
+
+    main .main-content .container-flex {
+        flex-wrap: wrap;
+    }
+
+    main .main-content .wrapper .song {
+        width: calc( 100% / 3 );
+    }
 }
