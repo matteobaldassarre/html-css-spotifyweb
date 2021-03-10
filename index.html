@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link rel="icon" href="img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <title>SpotifyWeb</title>
 </head>
 <body>
@@ -16,14 +19,12 @@
         <main>
 
             <!-- Side Menu -->
-            <nav>
+            <nav class="bg-black white-txt">
                 <!-- Flex Container -->
                 <div class="container-flex">
                     <!-- Logo -->
                     <div class="logo">
-                        <a href="#">
-                            Logo
-                        </a>
+                        <a href="#"><img src="img/logo.svg" alt="logo"></a>
                     </div>
                     <!-- End Logo -->
     
@@ -31,14 +32,23 @@
                     <div class="main-links">
                         <ul>
                             <li>
-                                <a href="#">Home</a>
+                                <div class="icon">
+                                    <img src="img/home.svg" alt="home">
+                                </div>
+                                <a href="#" class="white-txt">Home</a>
                             </li>
     
                             <li>
+                                <div class="icon">
+                                    <img src="img/search.svg" alt="search">
+                                </div>
                                 <a href="#">Cerca</a>
                             </li>
     
                             <li>
+                                <div class="icon">
+                                    <img src="img/libreria.svg" alt="library">
+                                </div>
                                 <a href="#">La tua libreria</a>
                             </li>
                         </ul>
@@ -47,18 +57,20 @@
                     
                     <!-- Playlist -->
                     <div class="playlist">
-                        <h2>PLAYLIST</h2>
-                        <div>Crea Playlist</div>
-    
                         <ul>
                             <li>
-                                <a href="#">Nome Playlist</a>
+                                <h2 class="font-size-15">PLAYLIST</h2>
                             </li>
-    
+
                             <li>
-                                <a href="#">Nome Playlist</a>
+                                <a href="#">
+                                    <div class="grey-square text-center">
+                                        <i class="fas fa-plus"></i>
+                                    </div>
+                                    <span class="grey-txt">Crea Playlist</span>
+                                </a>
                             </li>
-    
+
                             <li>
                                 <a href="#">Nome Playlist</a>
                             </li>
@@ -92,23 +104,36 @@
     
                     <!-- Install and User -->
                     <div class="install">
-                        <div>Installa app</div>
-                        John Doe
+                        <div class="white-txt">
+                            <div class="empty-circle">
+                                <i class="fas fa-arrow-down"></i>
+                            </div>
+                            <a href="#" class="grey-txt">Installa app</a>
+                        </div>
+                        <div class="grey-line"></div>
+                        <div class="user">
+                            <div class="grey-circle">
+                                <img src="img/profile.svg" alt="profile">
+                            </div>
+                            &nbsp;
+                            <span><strong>John Doe</strong></span>
+                        </div>
                     </div>
                     <!-- End Install and User -->
+
                 </div>
                 <!-- End Flex Container -->
             </nav>
             <!-- End Side Menu -->
 
             <!-- Fixed Upgrade Menu -->
-            <div class="upgrade">
-                
+            <div class="upgrade-menu text-right">
+                <a href="#" class="white-txt pop">EFFETTUA L'UPGRADE</a>
             </div>
             <!-- End Fixed Upgrade Menu -->
 
             <!-- Main Content -->
-            <div class="main-content">
+            <div class="main-content bg-blue">
               
             </div>
             <!-- End Main Content -->
@@ -117,7 +142,7 @@
         <!-- END MAIN -->
 
         <!-- FOOTER -->
-        <footer>
+        <footer class="bg-grey">
 
         </footer>
         <!-- END FOOTER -->
