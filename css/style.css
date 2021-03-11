@@ -405,7 +405,7 @@ footer {
 footer .music {
     display: flex;
     align-items: center;
-    width: 20%;
+    min-width: 20%;
 }
 
 footer .music .song {
@@ -527,7 +527,7 @@ footer .play .elapsed-bar-green:hover {
 
 /* Volume Column */
 footer .volume {
-    width: 20%;
+    min-width: 20%;
     margin: 40px 0;
 }
 
@@ -729,6 +729,10 @@ footer .volume .volume-bar-green:hover {
 
     footer .volume .options {
         font-size: 12px;
+    }
+
+    footer .play .time-bar {
+        margin: 0;
     }
 
 }
