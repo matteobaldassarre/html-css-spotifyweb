@@ -603,7 +603,7 @@ footer .volume .volume-bar-green:hover {
     }
 
     main .main-content .wrapper .song {
-        width: calc( 100% / 5 );
+        width: calc( 100% / 5 - 20px );
     }
 
     /* Footer */
@@ -639,7 +639,7 @@ footer .volume .volume-bar-green:hover {
     }
 
     main .main-content .wrapper .song {
-        width: calc( 100% / 4 );
+        width: calc( 100% / 4 - 20px );
     }
 
     /* Footer */
@@ -707,7 +707,7 @@ footer .volume .volume-bar-green:hover {
     }
 
     main .main-content .wrapper .song {
-        width: calc( 100% / 3 );
+        width: calc( 100% / 2 - 20px );
     }
 
     /* Footer  */
