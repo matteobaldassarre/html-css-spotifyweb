@@ -267,6 +267,7 @@ main .upgrade-menu {
     right: 0;
     height: 80px;
     background-color: #090b12b7;
+    z-index: 1;
 }
 
 main .upgrade-menu a {
@@ -410,8 +411,8 @@ footer .music {
 footer .music .song {
     margin-left: 15px;
     display: inline-block;
-    width: 50px;
-    height: 50px;
+    min-width: 50px;
+    min-height: 50px;
     background-image: url(../img/sinister.jpeg);
     background-size: cover;
 }
@@ -424,9 +425,23 @@ footer .music .icons {
     padding-left: 48px;
 }
 
+footer .music .icons a:last-child {
+    margin-left: 20px;
+}
+
+footer .music .icons .fa-heart,
+footer .music .icons .fa-folder {
+    transition: color 0.3s;
+}
+
+footer .music .icons .fa-heart:hover,
+footer .music .icons .fa-folder:hover {
+    color: white;
+}
+
 /* Play Column */
 footer .play {
-    width: 50%;
+    min-width: 60%;
 }
 
 footer .play.container-flex {
@@ -512,7 +527,7 @@ footer .play .elapsed-bar-green:hover {
 
 /* Volume Column */
 footer .volume {
-    width: 30%;
+    width: 20%;
     margin: 40px 0;
 }
 
@@ -566,14 +581,19 @@ footer .volume .volume-bar-green:hover {
 /* MEDIA QUERY */
 
 /* Media Query L */
-@media all and (min-width: 1200px) {
+@media all and (min-width: 1201px) {
     main nav img[alt="logo-small"] {
         display: none;
     }
+
+    /* Footer */
+    footer .music .icons {
+        padding-left: 20px;
+    }    
 }
 
 /* Media Query M */
-@media all and (max-width: 1199px) {
+@media all and (max-width: 1200px) {
     main nav img[alt="logo-small"] {
         display: none;
     }
@@ -585,10 +605,27 @@ footer .volume .volume-bar-green:hover {
     main .main-content .wrapper .song {
         width: calc( 100% / 5 );
     }
+
+    /* Footer */
+    footer .music .icons a:last-child {
+        margin-left: 0px;
+    }
+
+    footer .volume {
+        text-align: left;
+    }
+
+    footer .volume .volume-bar {
+        width: 30%;
+    }
+
+    footer .volume .options {
+        font-size: 14px;
+    }
 }
 
 /* Media Query S */
-@media all and (max-width: 991px) {
+@media all and (max-width: 992px) {
     main nav img[alt="logo-small"] {
         display: none;
     }
@@ -604,10 +641,15 @@ footer .volume .volume-bar-green:hover {
     main .main-content .wrapper .song {
         width: calc( 100% / 4 );
     }
+
+    /* Footer */
+    footer .music .icons a:last-child {
+        margin-left: 0px;
+    }
 }
 
 /* Media Query XS */
-@media all and (max-width: 767px) {
+@media all and (max-width: 768px) {
     main nav {
         width: 80px;
     }
@@ -667,4 +709,26 @@ footer .volume .volume-bar-green:hover {
     main .main-content .wrapper .song {
         width: calc( 100% / 3 );
     }
+
+    /* Footer  */
+    footer .music .icons {
+        padding-left: 10px;
+    }
+
+    footer .play .play-buttons a {
+        font-size: 15px;
+    }
+
+    footer .play .play-buttons .fa-play-circle {
+        font-size: 25px;
+    }
+
+    footer .volume .volume-bar {
+        width: 25%;
+    }
+
+    footer .volume .options {
+        font-size: 12px;
+    }
+
 }
