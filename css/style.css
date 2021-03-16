@@ -179,18 +179,11 @@ main nav .main-links ul li {
     border-left: 3px solid greenyellow;
 }
 
-/* Playlist */
-main nav .playlist {
-    min-height: 100px;
-    height: 100%;
-    overflow-y: auto;
-}
-
-main nav .playlist h2 {
+main nav .main-links h2 {
     padding: 25px 0px 10px 0px;
 }
 
-main nav .playlist .grey-square {
+main nav .main-links .grey-square {
     display: inline-block;
     background-color: #74777c;
     color: black;
@@ -199,26 +192,32 @@ main nav .playlist .grey-square {
     transition: background-color 0.3s, transform 0.3s;
 }
 
-main nav .playlist .grey-square .fa-plus {
+main nav .main-links .grey-square .fa-plus {
     line-height: 40px;
 }
 
-main nav .playlist .grey-square + span {
+main nav .main-links .grey-square + span {
     padding-left: 8px;
     transition: color 0.3s;
 }
 
-main nav .playlist .grey-square + span:hover {
+main nav .main-links .grey-square + span:hover {
     color: white;
 }
 
-main nav .playlist .grey-square:hover {
+main nav .main-links .grey-square:hover {
     background-color: white;
     transform: scale(1.1);
 }
 
+/* Playlist */
+main nav .playlist {
+    min-height: 100px;
+    height: 100%;
+    overflow-y: auto;
+}
 
-main nav .playlist ul li:nth-child(n+3) {
+main nav .playlist ul li {
     padding-top: 15px;
 }
 
@@ -715,6 +714,10 @@ footer .volume .volume-bar-green:hover {
         padding-left: 10px;
     }
 
+    footer .play {
+        min-width: 45%;
+    }
+
     footer .play .play-buttons a {
         font-size: 15px;
     }
@@ -735,4 +738,51 @@ footer .volume .volume-bar-green:hover {
         margin: 0;
     }
 
+    footer .volume .volume-bar {
+        width: 70%;
+    }
+
+}
+
+/* Media Query XXS */
+@media all and (max-width: 430px) {
+    /* FOOTER */
+    footer .play .play-buttons a {
+        font-size: 12px;
+    }
+
+    footer .play .play-buttons .fa-play-circle {
+        font-size: 20px;
+    }
+
+    footer .volume .options {
+        font-size: 10px;
+    }
+
+    footer .music .song {
+        margin-left: 2px;
+        min-width: 30px;
+        min-height: 30px;
+    }
+
+    footer .music span {
+        font-size: 10px;
+    }
+
+    footer .music .icons {
+        font-size: 12px;
+        padding-left: 0;
+    }
+
+    footer .play .play-buttons li {
+        padding-left: 5px;
+    }
+
+    footer .play .play-buttons li:nth-child(3) {
+        margin: 0 10px;
+    }
+
+    footer .volume .volume-bar {
+        width: 70%;
+    }
 }
